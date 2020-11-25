@@ -1,0 +1,10 @@
+micronaut:
+  application:
+    name: example
+  http:
+    client:
+      read-idle-timeout: 500ms
+      connect-timeout: 500ms
+
+host:
+  viacep: http://viacep.com.br
