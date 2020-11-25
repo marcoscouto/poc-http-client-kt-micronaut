@@ -20,9 +20,8 @@ interface AddressClient {
 
     @Fallback
     class AddressFallBack: AddressClient {
-        override fun getAddress(cep: String): HttpResponse<Address> {
-            return HttpResponse.notFound()
-        }
+        override fun getAddress(cep: String): HttpResponse<Address> =
+             HttpResponse.notFound()
     }
 
 }
