@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: example
+    name: http-client-example
   http:
     client:
       read-idle-timeout: 500ms
@@ -8,3 +8,7 @@ micronaut:
 
 host:
   viacep: http://viacep.com.br
+
+tracing:
+  jaeger:
+    enabled: true
